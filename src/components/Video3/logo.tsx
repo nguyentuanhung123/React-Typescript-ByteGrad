@@ -11,9 +11,8 @@ const Logo = () => {
 
     return (
         <>
-            <div>Logo {theme }</div>
-            <button onClick={() => setTheme('dark')}>Change to Dark</button>
-            <button onClick={() => setTheme('light')}>Change to Light</button>
+            <div style={{ background: theme === 'dark' ? '#000' : '#fff', color: theme === 'dark' ? '#fff' : '#000' }}>Logo {theme}</div>
+            <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>Change</button>
         </>
     )
 }

@@ -104,17 +104,92 @@
  * 
  */
 
-const project = {
-    tilte: "Project 1",
-    specification: {
-        areaSize: 100,
-        rooms: 3,
-    },
-};
+// const project = {
+//     tilte: "Project 1",
+//     specification: {
+//         areaSize: 100,
+//         rooms: 3,
+//     },
+// };
 
 // type Specification = typeof project;
 
-type Specification = typeof project["specification"];
+// type Specification = typeof project["specification"];
+
+/**
+ * interfaces can be merged
+ * "interfaces are open" and "type aliases are close"
+ */
+
+// interface User {
+//     name:  string;
+//     age: number;
+// }
+
+// interface User {
+//     role: string;
+// }
+
+// let user: User = {
+//     name: 'Hung',
+//     age: 21,
+//     role: 'Develop'
+// }
+
+// type User = {
+//     name:  string;
+//     age: number;
+// }
+
+// type User2 = User & {
+//     role: string;
+// }
+
+// let user: User2 = {
+//     name: 'Hung',
+//     age: 21,
+//     role: 'Develop'
+// }
+
+/**
+ * type alias can be used for classes too
+ */
+
+// interface IUser {
+//     name: string;
+//     age: number;
+// }
+
+// class User implements IUser {
+//     name: string;
+//     age: number;
+
+//     constructor(name: string, age: number) {
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+
+// type TUser =  {
+//     name: string;
+//     age: number;
+// }
+
+// class User implements TUser {
+//     name: string;
+//     age: number;
+
+//     constructor(name: string, age: number) {
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+
+// --------------------------------------------------------
+
+/**
+ * type alias can be used for functions too
+ */
 
 
 

@@ -1,14 +1,18 @@
 
 import './App.css'
-import ProductPage from './components/Video2/page'
-import Logo from './components/Video3/logo'
+import Themes from './components/Video5/themes'
+// import ProductPage from './components/Video2/page'
+// import Logo from './components/Video3/logo'
+// import Home from './components/Video4/page'
 
 const App = () => {
 
   return (
     <>
-      <ProductPage />
+      {/* <ProductPage />
       <Logo />
+      <Home/> */}
+      <Themes />
     </>
   )
 }
